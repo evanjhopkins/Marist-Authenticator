@@ -17,10 +17,12 @@ if(isset($_POST['username'])){
 </tr>
 </table>
 <?php
-	if($response==1){
-		echo "LOGIN SUCCESS";
-	}else{
-		echo "LOGIN FAILED";
+	if(isset($_POST['username'])){
+		if($response==1){
+			echo "Success";
+		}else{
+			echo "Failed";
+		}
 	}
 ?>
 
