@@ -1,3 +1,6 @@
 <?php
-$isAuthed = system("python auth.py evan.hopkins1 dog");
+function auth($user, $pass){
+	$isAuthed = system("python auth.py ".$user" ".$pass);
+	return $isAuthed;
+}
 ?>
