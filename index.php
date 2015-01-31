@@ -7,9 +7,15 @@ if(isset($_POST['username'])){
 <html>
 <h1>Marist Authenticator</h1>
 <form method="post" action="">
-Username:<input type="text" name="username"><br>
-Password:<input type="password" name="password"><br>
-<input type="submit" value="Submit"><br>
+<table>
+<tr>
+<td>Username:</td><td><input type="text" name="username"></td>
+</tr><tr>
+<td>Password:</td><td><input type="password" name="password"></td>
+</tr><tr>
+<td><input type="submit" value="Submit"></td><td></td>
+</tr>
+</table>
 <?php
 	if($response==1){
 		echo "LOGIN SUCCESS";
