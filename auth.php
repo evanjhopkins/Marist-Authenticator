@@ -1,6 +1,8 @@
 <?php
 function auth($user, $pass){
-	$isAuthed = system("python auth.py ".$user." ".$pass);
+	
+	$cmd = "python auth.py ".$user." ".$pass;
+	$isAuthed = exec($cmd);
 	return $isAuthed;
 }
 ?>
